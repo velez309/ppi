@@ -1,4 +1,4 @@
-export const Preguntas = [
+export const Preguntas1 = [
   {
     id: 0,
     pregunta:

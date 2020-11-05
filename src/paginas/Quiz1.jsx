@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Quiz1.css";
 import { Preguntas1 } from "./Preguntas1";
 
-class Quiz extends React.Component {
+class Quiz1 extends React.Component {
   state = {
     currentQuestion: 0,
     myRespuesta: null,
@@ -23,7 +23,7 @@ class Quiz extends React.Component {
   };
 
   componentDidMount() {
-    this.mostrarQuiz();
+    this.mostrarQuiz1();
   }
 
   nextQuestionHandler = () => {
@@ -127,4 +127,4 @@ class Quiz extends React.Component {
   }
 }
 
-export default Quiz;
+export default Quiz1;
