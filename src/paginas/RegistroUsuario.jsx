@@ -1,6 +1,5 @@
 import React from "react";
 //import "../components/styles/Iniciosesion.css";
-import { Link } from "react-router-dom";
 
 class RegistroUsuario extends React.Component {
   render() {
