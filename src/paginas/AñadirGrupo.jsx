@@ -7,44 +7,7 @@ class Registro extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <div className="form-group">
-            <label>Nombre:</label>
-            <input
-              onChange={this.props.onChange}
-              className="form-control"
-              type="text"
-              name="user"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Apellido:</label>
-            <input
-              onChange={this.props.onChange}
-              className="form-control"
-              type="text"
-              name="pass"
-            />
-          </div>
-          <div className="form-group">
-            <label>Correo:</label>
-            <input
-              onChange={this.props.onChange}
-              className="form-control"
-              type="text"
-              name="pass"
-            />
-          </div>
-          <div className="form-group">
-            <label>Contraseña:</label>
-            <input
-              onChange={this.props.onChange}
-              className="form-control"
-              type="text"
-              name="pass"
-            />
-          </div>
-          <label>Perfil:</label>
+          <label>Grupo:</label>
           <select class="form-control form-control-lg">
             <option>Seleccione una opción</option>
             <option>Sexto 1</option>
@@ -55,8 +18,11 @@ class Registro extends React.Component {
             <option>Septimo 3</option>
           </select>
           <br />
-          <Link to="/RegistroUsuario" className="btn btn-light">
-            Registrar
+          <Link to="/RegistroGrupo" className="btn btn-light">
+            Agregar
+          </Link>
+          <Link to="/PerfilDocente" className="btn btn-light">
+            Atrás
           </Link>
         </form>
       </div>
