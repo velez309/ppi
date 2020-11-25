@@ -12,6 +12,7 @@ import PerfilEstudiante from "../paginas/PerfilEstudiante";
 import InicioEstudiante from "../paginas/InicioEstudiante";
 import Resultados from "../paginas/Resultados";
 import RegistroUsuario from "../paginas/RegistroUsuario";
+import AñadirGrupo from "../paginas/AñadirGrupo";
 
 function Rutas() {
   return (
@@ -29,6 +30,7 @@ function Rutas() {
           <Route exact path="/InicioEstudiante" component={InicioEstudiante} />
           <Route exact path="/Resultados" component={Resultados} />
           <Route exact path="/ReGistroUsuario" component={RegistroUsuario} />
+          <Route exact path="/AñadirGrupo" component={AñadirGrupo} />
         </Switch>
       </Layout>
     </BrowserRouter>
