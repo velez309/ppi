@@ -2,7 +2,7 @@ import React from "react";
 //import "../components/styles/Iniciosesion.css";
 import { Link } from "react-router-dom";
 
-import InsigniaFormulario from "../components/InsigniaFormulario";
+import InsigniaEstudiante from "../components/InsigniaEstudiante";
 
 class InicioEstudiante extends React.Component {
   state = {
@@ -29,7 +29,7 @@ class InicioEstudiante extends React.Component {
           <div className="row">
             <div className="col-6">
               <h1 className="tituloingresar">Iniciar sesión</h1>
-              <InsigniaFormulario
+              <InsigniaEstudiante
                 onChange={this.handleChange}
                 formValues={this.state.form}
               />

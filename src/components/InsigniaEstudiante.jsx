@@ -2,25 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 class InsigniaEstudiante extends React.Component {
-  // state={
-
-  // };
-  //EVENTO INPUT
-  // handleChange = (e) =>{
-  //     console.log({
-  //         name: e.target.name,
-  //         value: e.target.value
-  //     })
-  // }
-  // handleChange = (e) =>{
-  //     this.setState(
-  //         {
-  //             [e.target.name]: e.target.value
-  //         }
-  //     )
-  // }
-
-  //EVENTO BOTÓN
   handleClick = (e) => {
     console.log("Botón presionado");
   };
@@ -37,7 +18,7 @@ class InsigniaEstudiante extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Usuario:</label>
+            <label>Correo:</label>
             <input
               onChange={this.props.onChange}
               className="form-control"
@@ -58,17 +39,7 @@ class InsigniaEstudiante extends React.Component {
             />
           </div>
 
-          <div className="form-group">
-            <label>Correo:</label>
-            <input
-              onChange={this.props.onChange}
-              className="form-control"
-              type="text"
-              name="correo"
-              value={this.props.formValues.correo}
-            />
-          </div>
-          <Link to="/tipocuenta" className="btn btn-light">
+          <Link to="/PerfilEstudiante" className="btn btn-light">
             Continuar
           </Link>
         </form>

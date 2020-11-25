@@ -2,18 +2,18 @@ import React from "react";
 //import "../components/styles/Iniciosesion.css";
 import { Link } from "react-router-dom";
 
-class PerfilDocente extends React.Component {
+class PerfilEstudiante extends React.Component {
   render() {
     return (
       <div>
         <button type="button" class="btn btn-outline-primary">
-          <Link to="/AñadirGrupo" className="btn btn-light">
-            Añadir Nuevo grupo
+          <Link to="/Quiz1" className="btn btn-light">
+            Nivel 1
           </Link>
         </button>
         <button type="button" class="btn btn-outline-info">
-          <Link to="/Resultados" className="btn btn-light">
-            Resultados
+          <Link to="/Quiz" className="btn btn-light">
+            Nivel 2
           </Link>
         </button>
       </div>
@@ -21,4 +21,4 @@ class PerfilDocente extends React.Component {
   }
 }
 
-export default PerfilDocente;
+export default PerfilEstudiante;

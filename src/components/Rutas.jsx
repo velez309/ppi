@@ -8,6 +8,9 @@ import Quiz from "../paginas/Quiz";
 import Ajustes from "../paginas/Ajustes";
 import Quiz1 from "../paginas/Quiz1";
 import PerfilDocente from "../paginas/PerfilDocente";
+import PerfilEstudiante from "../paginas/PerfilEstudiante";
+import InicioEstudiante from "../paginas/InicioEstudiante";
+import Resultados from "../paginas/Resultados";
 
 function Rutas() {
   return (
@@ -21,6 +24,9 @@ function Rutas() {
           <Route exact path="/Ajustes" component={Ajustes} />
           <Route exact path="/Quiz1" component={Quiz1} />
           <Route exact path="/PerfilDocente" component={PerfilDocente} />
+          <Route exact path="/PerfilEstudiante" component={PerfilEstudiante} />
+          <Route exact path="/InicioEstudiante" component={InicioEstudiante} />
+          <Route exact path="/Resultados" component={Resultados} />
         </Switch>
       </Layout>
     </BrowserRouter>

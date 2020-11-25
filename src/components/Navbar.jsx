@@ -28,19 +28,16 @@ class Navbar extends React.Component {
             Menú principal
           </Link>
           <Link to="/iniciarsesion" className="btn btn-light">
-            Iniciar sesión
-          </Link>
-          <Link to="/registro" className="btn btn-light">
-            Registrarse
-          </Link>
-          <Link to="/PerfilDocente" className="btn btn-light">
             Docente
           </Link>
-          <Link to="/PerfilEstudiante" className="btn btn-light">
+          <Link to="/InicioEstudiante" className="btn btn-light">
             Estudiante
           </Link>
           <Link to="/Ajustes" className="btn btn-light">
             Ajustes
+          </Link>
+          <Link to="/registro" className="btn btn-light">
+            Registrarse
           </Link>
         </form>
       </nav>

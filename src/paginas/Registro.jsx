@@ -1,44 +1,60 @@
 import React from "react";
 //import "../components/styles/Iniciosesion.css";
-import InsigniaFormulario from "../components/InsigniaFormulario";
 import { Link } from "react-router-dom";
 
 class Registro extends React.Component {
-  state = {
-    form: {
-      user: "",
-      pass: "",
-      correo: "",
-      grupo: ""
-    }
-  };
-
-  handleChange = (e) => {
-    const nextForm = this.state.form;
-    nextForm[e.target.name] = e.target.value;
-    this.setState({
-      form: nextForm
-    });
-  };
-
   render() {
     return (
       <div>
-        <div className="container">
-          <div className="row">
-            <div className="col-6">
-              <h1 className="tituloingresar">Registrarse</h1>
-              <InsigniaFormulario
-                onChange={this.handleChange}
-                formValues={this.state.form}
-              />
-              <h5 className="regis1">¿Ya tienes una cuenta?</h5>
-              <Link to="/InicioSesion" className="regis2 btn">
-                Inicia Sesión
-              </Link>
-            </div>
+        <form onSubmit={this.handleSubmit}>
+          <div className="form-group">
+            <label>Nombre:</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="user"
+            />
           </div>
-        </div>
+
+          <div className="form-group">
+            <label>Apellido:</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="pass"
+            />
+          </div>
+          <div className="form-group">
+            <label>Correo:</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="pass"
+            />
+          </div>
+          <div className="form-group">
+            <label>Contraseña:</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="pass"
+            />
+          </div>
+          <label>Perfil:</label>
+          <select class="form-control form-control-lg">
+            <option>Seleccione una opción</option>
+            <option>Estudiante</option>
+            <option>Docente</option>
+          </select>
+          <br />
+          <Link to="/PerfilDocente" className="btn btn-light">
+            Registrar
+          </Link>
+        </form>
       </div>
     );
   }

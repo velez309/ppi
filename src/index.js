@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
-//import Home from "./paginas/Home";
 import "react-bootstrap";
 import Rutas from "./components/Rutas";
 //import Quiz from "./paginas/Quiz";
