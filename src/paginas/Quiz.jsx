@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Quiz.css";
 import { Preguntas } from "./Preguntas";
+import { Link } from "react-router-dom";
 
 class Quiz extends React.Component {
   state = {
@@ -76,16 +77,12 @@ class Quiz extends React.Component {
       return (
         <div className="result">
           <h3>Tu puntaje final es {this.state.puntaje} puntos </h3>
-          {/*   <div>
-                La respuesta correcta para las preguntas es
-                <ul>
-                  {Preguntas.map((item, index) => (
-                    <li className="ui floating message options" key={index}>
-                      {item.answer}
-                    </li>
-                  ))}
-                </ul>
-              </div> */}
+          <button type="button" class="btn btn-success">
+            {" "}
+            <Link to="/PerfilEstudiante" className="btn btn-light">
+              Atrás
+            </Link>
+          </button>
         </div>
       );
     } else {

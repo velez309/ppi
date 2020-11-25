@@ -17,7 +17,9 @@ class PerfilEstudiante extends React.Component {
           </Link>
         </button>
         <button type="button" class="btn btn-success">
-          Atrás
+          <Link to="/InicioEstudiante" className="btn btn-light">
+            Atrás
+          </Link>
         </button>
       </div>
     );

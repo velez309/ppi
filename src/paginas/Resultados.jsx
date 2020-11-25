@@ -63,7 +63,9 @@ class Resultados extends React.Component {
           </li>
         </ul>
         <button type="Atrás" class="btn btn-success">
-          Atrás
+          <Link to="/PerfilDocente" className="btn btn-light">
+            Atrás
+          </Link>
         </button>
       </div>
     );

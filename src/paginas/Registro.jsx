@@ -51,7 +51,7 @@ class Registro extends React.Component {
             <option>Docente</option>
           </select>
           <br />
-          <Link to="/PerfilDocente" className="btn btn-light">
+          <Link to="/RegistroUsuario" className="btn btn-light">
             Registrar
           </Link>
         </form>
