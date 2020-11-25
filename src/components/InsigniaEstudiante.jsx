@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-class InsigniaFormulario extends React.Component {
+class InsigniaEstudiante extends React.Component {
   // state={
 
   // };
@@ -37,7 +37,7 @@ class InsigniaFormulario extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Correo:</label>
+            <label>Usuario:</label>
             <input
               onChange={this.props.onChange}
               className="form-control"
@@ -58,7 +58,17 @@ class InsigniaFormulario extends React.Component {
             />
           </div>
 
-          <Link to="/PerfilDocente" className="btn btn-light">
+          <div className="form-group">
+            <label>Correo:</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="correo"
+              value={this.props.formValues.correo}
+            />
+          </div>
+          <Link to="/tipocuenta" className="btn btn-light">
             Continuar
           </Link>
         </form>
@@ -66,4 +76,4 @@ class InsigniaFormulario extends React.Component {
     );
   }
 }
-export default InsigniaFormulario;
+export default InsigniaEstudiante;
