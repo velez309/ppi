@@ -16,6 +16,9 @@ class PerfilEstudiante extends React.Component {
             Nivel 2
           </Link>
         </button>
+        <button type="button" class="btn btn-success">
+          Atrás
+        </button>
       </div>
     );
   }

@@ -24,6 +24,9 @@ class Ajustes extends React.Component {
             </center>
           </p>
         </div>
+        <button type="button" class="btn btn-success">
+          Atrás
+        </button>
       </div>
     );
   }

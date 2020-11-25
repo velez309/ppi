@@ -16,6 +16,9 @@ class PerfilDocente extends React.Component {
             Resultados
           </Link>
         </button>
+        <button type="button" class="btn btn-success">
+          Atrás
+        </button>
       </div>
     );
   }
